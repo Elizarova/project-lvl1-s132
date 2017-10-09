@@ -1,0 +1,19 @@
+{
+  "name": "brain-games",
+  "version": "0.0.1",
+  "description": "\"Simple console games\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elizarova/project-lvl1-s132.git"
+  },
+  "author": "Elizarova Anastasiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elizarova/project-lvl1-s132/issues"
+  },
+  "homepage": "https://github.com/Elizarova/project-lvl1-s132#readme"
+}
