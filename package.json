@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "scripts": {
+   "babel-node": "babel-node"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Elizarova/project-lvl1-s132.git"
@@ -15,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/Elizarova/project-lvl1-s132/issues"
   },
-  "homepage": "https://github.com/Elizarova/project-lvl1-s132#readme"
+  "homepage": "https://github.com/Elizarova/project-lvl1-s132#readme",
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*"
+  }
 }
