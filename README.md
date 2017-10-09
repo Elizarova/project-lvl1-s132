@@ -1,2 +1,2 @@
-#brain-games
+# brain-games
 ```
