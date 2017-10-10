@@ -1,6 +1,6 @@
 {
   "name": "brain-games-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple console games",
   "main": "index.js",
   "bin": {
@@ -26,5 +26,8 @@
     "babel-core": "*",
     "babel-preset-env": "*",
     "babel-preset-stage-0": "*"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.7"
   }
 }
