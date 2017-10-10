@@ -1,7 +1,7 @@
 {
   "name": "brain-games-cli",
   "version": "0.0.1",
-  "description": "\"Simple console games\"",
+  "description": "Simple console games",
   "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
