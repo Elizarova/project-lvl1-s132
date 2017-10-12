@@ -1,6 +1,6 @@
 {
   "name": "brain-games-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple console games",
   "main": "index.js",
   "bin": {
