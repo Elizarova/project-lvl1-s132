@@ -1,6 +1,6 @@
 {
   "name": "brain-games-cli",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "Simple console games",
   "main": "index.js",
   "bin": {
@@ -23,6 +23,9 @@
     "url": "https://github.com/Elizarova/project-lvl1-s132/issues"
   },
   "homepage": "https://github.com/Elizarova/project-lvl1-s132#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.7"
+  },
   "devDependencies": {
     "babel-cli": "*",
     "babel-core": "*",
@@ -32,8 +35,5 @@
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
     "eslint-plugin-import": "*"
-  },
-  "dependencies": {
-    "readline-sync": "^1.4.7"
   }
 }
