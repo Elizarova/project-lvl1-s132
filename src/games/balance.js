@@ -3,12 +3,9 @@ import randomNumber from '../randomNumber';
 
 export const rules = 'Balance the given number. \n';
 
-
 export const gamePlay = (userName) => {
   const question = randomNumber(10000, 100);
   console.log(`Question: ${question}`);
-
-  console.log(typeof question);
 
   const balance = (n) => {
     const numberToArray = n.toString().split('').map(a => +a);
