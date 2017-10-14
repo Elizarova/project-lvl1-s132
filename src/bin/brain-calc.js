@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import gameStart from '..';
 import * as calc from '../games/calc';
 

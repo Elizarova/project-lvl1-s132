@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import gameStart from '..';
 import * as balance from '../games/balance';
 

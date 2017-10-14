@@ -1,11 +1,10 @@
-import readlineSync from 'readline-sync';
 import randomNumber from '../randomNumber';
 
-export const rules = 'Balance the given number. \n';
+export const rules = 'Balance the given number.';
 
-export const gamePlay = (userName) => {
-  const question = randomNumber(10000, 100);
-  console.log(`Question: ${question}`);
+export const gamePlay = () => {
+  const randomNum = randomNumber(10000, 100);
+  const question = `Question: ${randomNum}`;
 
   const balance = (n) => {
     const numberToArray = n.toString().split('').map(a => +a);
@@ -23,15 +22,6 @@ export const gamePlay = (userName) => {
     return go(numberToArray).join('');
   };
 
-  const userAnswer = readlineSync.question('Your answer: ');
-  const correctAnswer = balance(question);
-  console.log(correctAnswer);
-
-  if (userAnswer !== correctAnswer) {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.)`);
-    console.log(`Let's try again, ${userName}!`);
-    return false;
-  }
-  console.log('Correct!');
-  return true;
+  const correctAnswer = balance(randomNum);
+  return [question, correctAnswer];
 };
