@@ -7,8 +7,9 @@
 Simple console games:
   - brain-even
   - brain-calc
+  - brain-gdc
 
- ### Installation
+### Installation
 ```sh
 $ npm install brain-games-cli
 ```
