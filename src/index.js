@@ -1,40 +1,31 @@
 import readlineSync from 'readline-sync';
 
-const greeting = () => {
+
+const gameStart = (gameName, gameRules, gameRounds) => {
   console.log('Wlcome to the Brain Games! \n');
   const userName = readlineSync.question('May I have your name? ');
+
   console.log(`Hello, ${userName}!\n`);
-};
+  const graz = `Congratulations, ${userName}!`;
 
-
-const isEven = n => n % 2 === 0;
-const randomNum = () => Math.floor(Math.random() * 99) + 1;
-
-export const brainEven = () => {
-  console.log('Wlcome to the Brain Games!');
-  console.log('Answer "yes" if number even otherwise answer "no". \n');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!\n`);
-  const gameCount = 3;
-  for (let i = 0; i < gameCount; i += 1) {
-    const num = randomNum();
-
-    console.log(`Question: ${num}`);
-    const answer = readlineSync.question('Your answer: ');
-
-    const goodAnswer = (a) => {
-      const ans = isEven(a) ? 'yes' : 'no';
-      return ans;
-    };
-    if (answer !== goodAnswer(num)) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${goodAnswer(num)}'.)`);
-      console.log(`Let's try again, ${userName}!`);
-      return;
-    }
-    console.log('Correct!');
+  if (gameName === undefined) {
+    return;
   }
 
-  console.log(`Congratulations, ${userName}!`);
+  console.log(gameRules);
+
+
+  const go = (func, count) => {
+    if (count === 0) {
+      return console.log(graz);
+    }
+    if (func(userName) === false) {
+      return false;
+    }
+    return go(func, count - 1);
+  };
+
+  go(gameName, gameRounds);
 };
 
-export default greeting;
+export default gameStart;
