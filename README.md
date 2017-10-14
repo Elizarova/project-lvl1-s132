@@ -8,6 +8,7 @@ Simple console games:
   - brain-even
   - brain-calc
   - brain-gdc
+  - brain-balance
 
 ### Installation
 ```sh

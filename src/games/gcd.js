@@ -3,9 +3,6 @@ import randomNumber from '../randomNumber';
 
 export const rules = 'Find the greatest common divisor of given numbers. \n';
 
-
-// const randomNum = () => Math.floor(Math.random() * 99) + 1;
-
 export const gamePlay = (userName) => {
   const a = randomNumber(100, 1);
   const b = randomNumber(100, 1);
