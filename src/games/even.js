@@ -1,12 +1,12 @@
 import readlineSync from 'readline-sync';
+import randomNumber from '../randomNumber';
 
 export const rules = 'Answer "yes" if number even otherwise answer "no". \n';
 
 const isEven = n => n % 2 === 0;
-const randomNum = () => Math.floor(Math.random() * 99) + 1;
 
 export const gamePlay = (userName) => {
-  const question = randomNum();
+  const question = randomNumber(100, 1);
 
   const correctAnswer = (a) => {
     const ans = isEven(a) ? 'yes' : 'no';

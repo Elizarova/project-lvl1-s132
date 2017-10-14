@@ -1,13 +1,12 @@
 import readlineSync from 'readline-sync';
+import randomNumber from '../randomNumber';
 
 export const rules = 'What is the result of the expression? \n';
 
-const randomNum = () => Math.floor(Math.random() * 10) + 1;
-
 
 export const gamePlay = (userName) => {
-  const a = randomNum();
-  const b = randomNum();
+  const a = randomNumber(10, 1);
+  const b = randomNumber(10, 1);
 
   const operators = ['+', '-', '*'];
   const randomOperatorIndex = Math.floor(Math.random() * operators.length);
