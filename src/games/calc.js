@@ -1,5 +1,5 @@
 import gameStart from '..';
-import randomNumber from '../randomNumber';
+import randomNumber from '../utils';
 
 const rules = 'What is the result of the expression?';
 
