@@ -7,8 +7,7 @@ const balance = (n) => {
   const numberToArray = n.toString().split('').map(a => +a);
 
   const balanceArray = (array) => {
-    const sorted = array.sort((a, b) => a - b);
-
+    const sorted = array.slice().sort((a, b) => a - b);
     const last = (array[array.length - 1]);
     const first = (array[0]);
     if (last - first > 1) {
