@@ -9,6 +9,7 @@ Simple console games:
   - brain-calc
   - brain-gdc
   - brain-balance
+  - brain-progression
 
 ### Installation
 ```sh
