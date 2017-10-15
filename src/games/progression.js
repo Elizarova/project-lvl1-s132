@@ -18,13 +18,13 @@ const progression = (first, step) => {
 const gameData = () => {
   const firstNum = randomNumber(10, 0);
   const step = randomNumber(5, 1);
-  const randomPIndex = randomNumber(maxQuestNumbers, 0);
+  const randomIndex = randomNumber(maxQuestNumbers, 0);
 
   const numbers = progression(firstNum, step);
-  numbers.splice(randomPIndex, 1, '..');
+  numbers.splice(randomIndex, 1, '..');
 
   const question = `Question: ${numbers.join(' ')}`;
-  const correctAnswer = progression(firstNum, step)[randomPIndex].toString();
+  const correctAnswer = progression(firstNum, step)[randomIndex].toString();
 
   return [question, correctAnswer];
 };
