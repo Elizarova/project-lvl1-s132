@@ -8,8 +8,8 @@ const balance = (n) => {
 
   const balanceArray = (array) => {
     const sorted = array.slice().sort((a, b) => a - b);
-    const last = (array[array.length - 1]);
-    const first = (array[0]);
+    const last = (sorted[sorted.length - 1]);
+    const first = (sorted[0]);
     if (last - first > 1) {
       const newArr = [sorted[0] + 1, ...sorted.slice(1, -1), sorted.slice(-1)[0] - 1];
       return balanceArray(newArr);
