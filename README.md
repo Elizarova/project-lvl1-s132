@@ -10,6 +10,7 @@ Simple console games:
   - brain-gdc
   - brain-balance
   - brain-progression
+  - brain-prime
 
 ### Installation
 ```sh

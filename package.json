@@ -1,6 +1,6 @@
 {
   "name": "brain-games-cli",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Simple console games",
   "main": "index.js",
   "bin": {
@@ -9,7 +9,8 @@
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-balance": "dist/bin/brain-calc.js",
     "brain-gdc": "dist/bin/brain-gdc.js",
-    "brain-progression": "dist/bin/brain-progression.js"
+    "brain-progression": "dist/bin/brain-progression.js",
+    "brain-prime": "dist/bin/brain-prime.js"
   },
   "scripts": {
     "babel-node": "babel-node",
