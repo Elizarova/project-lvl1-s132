@@ -1,13 +1,14 @@
 import gameStart from '..';
 import randomNumber from '../utils';
 
-const rules = 'Balance the given number.';
+const description = 'Balance the given number.';
 
 const balance = (n) => {
   const numberToArray = n.toString().split('').map(a => +a);
 
   const balanceArray = (array) => {
     const sorted = array.sort((a, b) => a - b);
+
     const last = (array[array.length - 1]);
     const first = (array[0]);
     if (last - first > 1) {
@@ -27,4 +28,4 @@ const gameData = () => {
   return [question, correctAnswer];
 };
 
-export default () => gameStart(gameData, rules);
+export default () => gameStart(gameData, description);

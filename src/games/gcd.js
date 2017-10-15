@@ -1,7 +1,7 @@
 import gameStart from '..';
 import randomNumber from '../utils';
 
-const rules = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (x, y) => {
   if (y === 0) {
@@ -18,4 +18,4 @@ const gameData = () => {
   return [question, correctAnswer];
 };
 
-export default () => gameStart(gameData, rules);
+export default () => gameStart(gameData, description);

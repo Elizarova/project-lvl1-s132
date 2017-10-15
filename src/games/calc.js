@@ -1,7 +1,9 @@
 import gameStart from '..';
 import randomNumber from '../utils';
 
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
+
+const operators = ['+', '-', '*'];
 
 const calc = (op, x, y) => {
   switch (op) {
@@ -18,7 +20,6 @@ const gameData = () => {
   const a = randomNumber(10, 1);
   const b = randomNumber(10, 1);
 
-  const operators = ['+', '-', '*'];
   const randomOperatorIndex = randomNumber(operators.length, 0);
   const randomOperator = operators[randomOperatorIndex];
 
@@ -28,4 +29,4 @@ const gameData = () => {
   return [question, correctAnswer];
 };
 
-export default () => gameStart(gameData, rules);
+export default () => gameStart(gameData, description);
