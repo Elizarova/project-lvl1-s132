@@ -1,13 +1,14 @@
 {
   "name": "brain-games-cli",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "description": "Simple console games",
   "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
-    "brain-balance": "dist/bin/brain-calc.js"
+    "brain-balance": "dist/bin/brain-calc.js",
+    "brain-gdc": "dist/bin/brain-gdc.js"
   },
   "scripts": {
     "babel-node": "babel-node",
