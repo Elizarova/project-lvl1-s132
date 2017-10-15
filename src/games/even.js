@@ -1,13 +1,14 @@
+import gameStart from '..';
 import randomNumber from '../randomNumber';
 
-export const rules = 'Answer "yes" if number even otherwise answer "no".';
+const rules = 'Answer "yes" if number even otherwise answer "no".';
 
 const isEven = (n) => {
   const ans = (n % 2 === 0) ? 'yes' : 'no';
   return ans;
 };
 
-export const gamePlay = () => {
+const gameData = () => {
   const randomNum = randomNumber(100, 1);
   const question = (`Question: ${randomNum}`);
 
@@ -15,3 +16,5 @@ export const gamePlay = () => {
 
   return [question, correctAnswer];
 };
+
+export default () => gameStart(gameData, rules);

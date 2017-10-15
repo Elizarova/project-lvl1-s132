@@ -1,26 +1,31 @@
+import gameStart from '..';
 import randomNumber from '../randomNumber';
 
-export const rules = 'What is the result of the expression?';
+const rules = 'What is the result of the expression?';
 
-export const gamePlay = () => {
+const calc = (op, x, y) => {
+  switch (op) {
+    case '+':
+      return x + y;
+    case '-':
+      return x - y;
+    default:
+      return x * y;
+  }
+};
+
+const gameData = () => {
   const a = randomNumber(10, 1);
   const b = randomNumber(10, 1);
 
   const operators = ['+', '-', '*'];
-  const randomOperatorIndex = Math.floor(Math.random() * operators.length);
+  const randomOperatorIndex = randomNumber(operators.length, 0);
   const randomOperator = operators[randomOperatorIndex];
 
   const question = `Question: ${a} ${randomOperator} ${b}`;
-
-  const expressionResult = (op, x, y) => {
-    if (op === '+') {
-      return +x + +(y);
-    } else if (op === '-') {
-      return +x - +(y);
-    }
-    return +x * +(y);
-  };
-  const correctAnswer = expressionResult(randomOperator, a, b);
+  const correctAnswer = calc(randomOperator, a, b);
 
   return [question, correctAnswer];
 };
+
+export default () => gameStart(gameData, rules);
