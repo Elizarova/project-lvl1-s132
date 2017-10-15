@@ -23,7 +23,7 @@ const gameData = () => {
   const randomOperator = operators[randomOperatorIndex];
 
   const question = `Question: ${a} ${randomOperator} ${b}`;
-  const correctAnswer = calc(randomOperator, a, b);
+  const correctAnswer = calc(randomOperator, a, b).toString();
 
   return [question, correctAnswer];
 };
