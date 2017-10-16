@@ -12,7 +12,8 @@ const gameStart = (gameData, rules) => {
 
   for (let i = 0; i < gameRounds; i += 1) {
     const data = gameData();
-    const question = data[0];
+
+    const question = `Question: ${data[0]}`;
     console.log(question);
 
     const userAnswer = readlineSync.question('Your answer: ');

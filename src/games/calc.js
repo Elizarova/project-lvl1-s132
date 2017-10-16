@@ -23,7 +23,7 @@ const gameData = () => {
   const randomOperatorIndex = randomNumber(operators.length, 0);
   const randomOperator = operators[randomOperatorIndex];
 
-  const question = `Question: ${a} ${randomOperator} ${b}`;
+  const question = `${a} ${randomOperator} ${b}`;
   const correctAnswer = calc(randomOperator, a, b).toString();
 
   return [question, correctAnswer];

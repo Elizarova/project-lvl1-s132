@@ -13,7 +13,7 @@ const gcd = (x, y) => {
 const gameData = () => {
   const a = randomNumber(100, 1);
   const b = randomNumber(100, 1);
-  const question = `Question: ${a} ${b}`;
+  const question = `${a} ${b}`;
   const correctAnswer = gcd(a, b).toString();
   return [question, correctAnswer];
 };

@@ -10,7 +10,7 @@ const isEven = (n) => {
 
 const gameData = () => {
   const randomNum = randomNumber(100, 1);
-  const question = (`Question: ${randomNum}`);
+  const question = `${randomNum}`;
 
   const correctAnswer = isEven(randomNum);
 

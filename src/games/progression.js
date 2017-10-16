@@ -23,7 +23,7 @@ const gameData = () => {
   const numbers = progression(firstNum, step);
   numbers.splice(randomIndex, 1, '..');
 
-  const question = `Question: ${numbers.join(' ')}`;
+  const question = `${numbers.join(' ')}`;
   const correctAnswer = progression(firstNum, step)[randomIndex].toString();
 
   return [question, correctAnswer];
