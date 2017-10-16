@@ -16,4 +16,4 @@ Simple console games:
 ```sh
 $ npm install brain-games-cli
 ```
-[![asciicast](https://asciinema.org/a/yx6RCJJc5koUvK3S0M8B985wj.png)](https://asciinema.org/a/yx6RCJJc5koUvK3S0M8B985wj?t=3&speed=4)
+[![asciicast](https://asciinema.org/a/LhuvMYU4bl1liuYYYyb1tZvkL.png)](https://asciinema.org/a/LhuvMYU4bl1liuYYYyb1tZvkL?t=3&speed=4)
